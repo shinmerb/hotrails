@@ -68,6 +68,8 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.7)
       public_suffix (>= 2.0.2, < 7.0)
+    base64 (0.2.0)
+    bigdecimal (3.1.8)
     bindex (0.8.1)
     bootsnap (1.18.4)
       msgpack (~> 1.2)
@@ -89,6 +91,7 @@ GEM
     debug (1.9.2)
       irb (~> 1.10)
       reline (>= 0.3.8)
+    drb (2.2.1)
     erubi (1.13.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
@@ -117,6 +120,7 @@ GEM
     mini_mime (1.1.5)
     minitest (5.25.2)
     msgpack (1.7.5)
+    mutex_m (0.2.0)
     net-imap (0.5.1)
       date
       net-protocol
@@ -237,12 +241,16 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  base64
+  bigdecimal
   bootsnap
   capybara
   cssbundling-rails
   debug
+  drb
   jbuilder
   jsbundling-rails
+  mutex_m
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.0)
