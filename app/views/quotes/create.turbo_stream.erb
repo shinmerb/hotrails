@@ -1,3 +1,3 @@
 <%= turbo_stream.prepend "quotes", @quote %>
 <%= turbo_stream.update Quote.new, "" %>
-<%= turbo_stream.prepend "flash", partial: "layouts/flash" %>
+<%= render_turbo_stream_flash_messages %>
